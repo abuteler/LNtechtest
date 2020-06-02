@@ -1,5 +1,4 @@
-import Grilla from './Grilla';
-import Etiquetas from './Etiquetas'
+import { Grilla, Etiquetas } from '../index';
 
 function Listado () {
   return (<div>
