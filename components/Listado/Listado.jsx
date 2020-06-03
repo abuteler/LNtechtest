@@ -1,7 +1,11 @@
 import { Grilla, Etiquetas } from '../index';
 
 function Listado ({data}) {
-  return (<div>
+  const styles = {
+    width: 880,
+    marginRight: 80,
+  };
+  return (<div style={styles}>
     <h1>Grilla here.</h1>
     <Etiquetas />
     <Grilla data={data} />
