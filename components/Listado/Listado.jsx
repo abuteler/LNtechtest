@@ -1,17 +1,12 @@
-import { Grilla, Etiquetas } from '../index';
+import { PreviewArticulo, Etiquetas } from '../index';
+import styles from './Listado.module.scss';
 
-function Listado ({data}) {
-  const styles = {
-    width: 880,
-    marginRight: 80,
-  };
-  return (<div style={styles}>
-    <h1>Grilla here.</h1>
+export default function Listado({articles}) {
+  return (<div className={styles.container}>
+    <h1>Acumulado Grilla</h1>
     <Etiquetas />
-    <Grilla data={data} />
-    <h3>{data && data.articles && data.articles[3].headlines.basic}</h3>
+    <PreviewArticulo articles={articles} />
+    <h3>{articles && articles[3] && articles[3].headlines.basic}</h3>
     <button>Mas notas</button>
-  </div>);
-}
-
-export default Listado;
+  </div>)
+};

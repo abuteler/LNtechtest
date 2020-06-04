@@ -1,0 +1,15 @@
+.container {
+  width: 880px;
+  margin-right: 80px;
+  h1 {
+    // display: block;
+    margin-top: 0;
+    font-family: "SuecaSlab", "Georgia", "serif";
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: -0.4px;
+    width: fit-content;
+    border-bottom: 2px solid black;
+  };
+};

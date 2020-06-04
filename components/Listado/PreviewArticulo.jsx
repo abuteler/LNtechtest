@@ -1,6 +1,6 @@
 import React from 'react';
 
-class GrillaArticuloPreview extends React.Component {
+class PreviewArticulo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,4 +11,4 @@ class GrillaArticuloPreview extends React.Component {
   }
 }
 
-export default GrillaArticuloPreview;
+export default PreviewArticulo;

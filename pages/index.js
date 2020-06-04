@@ -10,25 +10,25 @@ const contentLayoutStyle = {
   justifyContent: 'center',
 };
 
-function Index ({ articles }) {
+function Index ({ data: { articles } }) {
   return (<div className="site-layout">
     <Header />
-    <div className="content-container" style={contentContainerStyle}>
+    <main className="content-container" style={contentContainerStyle}>
       <TopBanner />
       <div className="content-layout" style={contentLayoutStyle}>
-        <Listado data={articles} />
+        <Listado articles={articles} />
         <SideBanner />
       </div>
-    </div>
+    </main>
   </div>);
 }
 
 export async function getServerSideProps () {
   const res = await fetch('https://api-test-ln.herokuapp.com/articles');
-  const articles = await res.json();
+  const data = await res.json();
   return {
     props: {
-      articles,
+      data,
     }
   };
 }

@@ -1,5 +1,6 @@
 // React, shallow, mount y render estan definidas como globals via jest-environment-enzyme
 import { Header, TopBanner, Listado, SideBanner } from '../../components/index';
+import styles from '../../components/Listado/Listado.module.scss';
 
 describe('Tests básicos de la pagina principal', () => {
   let wrapper;
