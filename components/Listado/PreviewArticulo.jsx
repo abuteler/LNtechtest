@@ -3,7 +3,7 @@ import { formatearFecha } from '../../utils/fechas';
 
 export default function PreviewArticulo ({ article }) {
   const fechaFormateada = formatearFecha(article.display_date);
-  return(<article className={styles.container}>
+  return article.subtype === '7' && (<article className={styles.container}>
     <section>
       <a href={article.website_url}>
         <picture><img src={article.promo_items && article.promo_items.basic && article.promo_items.basic.url} /></picture>
