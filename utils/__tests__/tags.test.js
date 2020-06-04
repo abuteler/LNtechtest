@@ -8,7 +8,7 @@ describe('Dado un array de articulos, getTagsMap devuelve un mapa del conjunto t
   });
   test('Agrupa los tags en un unico array', () => {
     const tagsMap = getTagsMap(articles);
-    expect(tagsMap.length).toBe(10);
+    expect(tagsMap.length).toBe(11);
   });
   test('Los tags estan contabilizados segun su identificador unico', () => {
     const tagsMap = getTagsMap(articles);

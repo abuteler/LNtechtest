@@ -62,6 +62,10 @@ export const articles = [
         {
         "slug": "vainilla-tid47214",
         "text": "Esencia de vainilla"
+        },
+        {
+        "slug": "azucar-tid47255",
+        "text": "Azucar"
         }
       ]
     },
