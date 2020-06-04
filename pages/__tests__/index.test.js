@@ -1,6 +1,6 @@
 // React, shallow, mount y render estan definidas como globals via jest-environment-enzyme
 import { Header, TopBanner, Listado, SideBanner } from '../../components/index';
-import styles from '../../components/Listado/Listado.module.scss';
+import { articles } from '../../jest/__mocks__/articlesResponseMock';
 
 describe('Tests básicos de la pagina principal', () => {
   let wrapper;
@@ -13,7 +13,7 @@ describe('Tests básicos de la pagina principal', () => {
     expect(wrapper).toExist();
   });
   test('El componente Header existe', () => {
-    wrapper = shallow(<Listado />);
+    wrapper = shallow(<Listado articles={articles} />);
     expect(wrapper).toExist();
   });
   test('El componente Header existe', () => {

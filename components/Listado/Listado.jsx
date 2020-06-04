@@ -7,8 +7,11 @@ export default function Listado({articles}) {
   return (<div className={styles.container}>
     <h1>Acumulado Grilla</h1>
     <Etiquetas tags={tagsMap} />
-    <PreviewArticulo articles={articles} />
-    <h3>{articles && articles[3] && articles[3].headlines.basic}</h3>
+    <section>
+      {
+        articles.map((article, i) => (<PreviewArticulo key={i} article={article} />))
+      }
+    </section>
     <button>Mas notas</button>
   </div>)
 };

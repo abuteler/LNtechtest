@@ -7,7 +7,7 @@ describe('Tests de componente Etiquetas', () => {
     const tagsMap = getTagsMap(articles);
     const component = shallow(<Etiquetas tags={tagsMap} />);
     expect(tagsMap.length).toBe(11);
-    expect(component).toContainMatchingElements(10, 'li');
+    expect(component).toContainMatchingElements(10, 'a');
   });
 
 });
