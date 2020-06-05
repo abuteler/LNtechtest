@@ -1,6 +1,6 @@
-import { articles } from '../../../jest/__mocks__/articlesResponseMock';
+import Etiquetas from '../../../components/Listado/Etiquetas';
 import { getTagsMap } from '../../../utils/tags.js';
-import Etiquetas from '../Etiquetas';
+import { articles } from '../../../config/jest/__mocks__/articlesResponseMock';
 
 describe('Tests de componente Etiquetas', () => {
   test('se renderizan un maximo de 10 etiquetas', () => {

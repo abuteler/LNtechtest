@@ -1,5 +1,6 @@
 import { getTagsMap } from '../../utils/tags';
-import { PreviewArticulo, Etiquetas } from '../index';
+import Etiquetas from './Etiquetas';
+import PreviewArticulo from './PreviewArticulo';
 import styles from './Listado.module.scss';
 
 export default function Listado({articles}) {

@@ -1,5 +1,5 @@
-import { getTagsMap } from '../tags.js';
-import { articles } from '../../jest/__mocks__/articlesResponseMock';
+import { getTagsMap } from '../../utils/tags.js';
+import { articles } from '../../config/jest/__mocks__/articlesResponseMock';
 
 describe('Dado un array de articulos, getTagsMap devuelve un mapa del conjunto total de tags, contabilizados, y ordenados', () => {
   test('Sin datos getTagsMap devuelve un array vacio', () => {

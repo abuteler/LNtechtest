@@ -1,5 +1,5 @@
-import PreviewArticulo from '../PreviewArticulo';
-import { articles } from '../../../jest/__mocks__/articlesResponseMock';
+import PreviewArticulo from '../../../components/Listado/PreviewArticulo';
+import { articles } from '../../../config/jest/__mocks__/articlesResponseMock';
 
 describe('Tests de componente PreviewArticulo', () => {
   test('Debe tener dos links, uno para la imagen y otro para el titulo.', () => {

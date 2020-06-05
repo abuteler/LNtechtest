@@ -5,11 +5,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "./node_modules/.bin/jest"
+    "test": "jest --watch",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
-    "cors": "2.8.5",
-    "enzyme": "^3.11.0",
     "next": "latest",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
@@ -18,21 +17,14 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.1.0",
+    "@testing-library/react": "^9.4.0",
+    "babel-jest": "^25.1.0",
+    "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^26.0.1",
-    "jest-environment-enzyme": "^7.1.2",
-    "jest-enzyme": "^7.1.2"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "jest-enzyme"
-    ],
-    "testEnvironment": "enzyme",
-    "testEnvironmentOptions": {
-      "enzymeAdapter": "react16"
-    },
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "<rootDir>/jest/__mocks__/stylesMock.js"
-    }
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "jest-enzyme": "^7.1.2",
+    "react-test-renderer": "^16.12.0"
   }
 }
