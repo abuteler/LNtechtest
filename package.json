@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "latest",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.26.7"
